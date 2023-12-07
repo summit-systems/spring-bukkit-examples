@@ -1,0 +1,6 @@
+package kr.summitsystems.gamemode
+
+import kr.summitsystems.springbukkit.SpringBukkitApplication
+
+@SpringBukkitApplication
+class GameModeApplication

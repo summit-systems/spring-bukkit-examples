@@ -1,0 +1,6 @@
+package kr.summitsystems.chatlogger
+
+import kr.summitsystems.springbukkit.SpringBukkitApplication
+
+@SpringBukkitApplication
+class ChatLoggerApplication
