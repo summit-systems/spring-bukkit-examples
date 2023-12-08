@@ -4,12 +4,10 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import kr.summitsystems.mute.domain.Mute
 import kr.summitsystems.mute.domain.repository.MuteRepository
-import org.springframework.context.annotation.Primary
 import org.springframework.stereotype.Repository
 import java.time.LocalDateTime
 import java.util.*
 
-@Primary
 @Repository
 class JpaDelegateMuteRepository(private val repository: JpaMuteRepository) : MuteRepository {
     override suspend fun findByPlayerId(playerId: UUID): List<Mute> {

@@ -31,18 +31,11 @@ dependencyResolutionManagement {
 
     versionCatalogs {
         create("libs") {
-            library("spring-bukkit-core", "kr.summitsystems:spring-bukkit-core:${extra["spring.bukkit.version"]}")
-
             library("spigot", "org.spigotmc:spigot-api:${extra["spigot.version"]}")
-            library("kotlin-stdlib", "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${extra["kotlin.version"]}")
-            library("kotlinx-coroutines-core", "org.jetbrains.kotlinx:kotlinx-coroutines-core:${extra["kotlinx.coroutines.version"]}")
-
-            library("spring-data-jpa", "org.springframework.data:spring-data-jpa:${extra["spring.data.version"]}")
-            library("hibernate", "org.hibernate.orm:hibernate-core:${extra["hibernate.version"]}")
-            library("hikaricp", "com.zaxxer:HikariCP:${extra["hikaricp.version"]}")
+            library("spring-bukkit-core", "kr.summitsystems:spring-bukkit-core:${extra["spring.bukkit.version"]}")
+            library("spring-bukkit-jpa", "kr.summitsystems:spring-bukkit-jpa:${extra["spring.bukkit.version"]}")
             library("spring-test", "org.springframework.boot:spring-boot-starter-test:${extra["spring.boot.version"]}")
         }
-
     }
 }
 

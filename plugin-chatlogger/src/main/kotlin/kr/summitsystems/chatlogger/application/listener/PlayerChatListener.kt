@@ -19,7 +19,7 @@ class PlayerChatListener(
     @BukkitListener
     suspend fun onChat(event: AsyncPlayerChatEvent) {
         coroutineScope.launch(Dispatchers.IO) {
-            val chatLog = ChatLog(null, event.player.uniqueId, event.message)
+            val chatLog = ChatLog(null, event.player.uniqueId, event.message, event.player.location)
             repository.save(chatLog)
         }
     }

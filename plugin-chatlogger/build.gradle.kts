@@ -14,17 +14,14 @@ bukkit {
     this.apiVersion = "1.13"
     this.description = "Example plugin for SpringBukkit usage."
     this.libraries = listOf(
-        libs.spring.data.jpa,
-        libs.hibernate,
-        libs.hikaricp,
-        libs.spring.bukkit.core
+        libs.spring.bukkit.core,
+        libs.spring.bukkit.jpa
     ).map { it.get().toString() }
 }
 
 dependencies {
     implementation(libs.spigot)
     implementation(libs.spring.bukkit.core)
-    implementation(libs.spring.data.jpa)
-    implementation(libs.hibernate)
+    implementation(libs.spring.bukkit.jpa)
     testImplementation(libs.spigot)
 }

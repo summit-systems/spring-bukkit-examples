@@ -2,7 +2,7 @@ package kr.summitsystems.mute.domain
 
 import jakarta.persistence.*
 import java.time.LocalDateTime
-import java.util.UUID
+import java.util.*
 
 @Entity
 @Table(
