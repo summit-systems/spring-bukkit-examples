@@ -1,4 +1,4 @@
-package kr.summitsystems.mute.application.listener
+package kr.summitsystems.mute.presentation.listener
 
 import kr.summitsystems.mute.domain.event.PlayerChatBlockedEvent
 import kr.summitsystems.mute.domain.service.MuteService

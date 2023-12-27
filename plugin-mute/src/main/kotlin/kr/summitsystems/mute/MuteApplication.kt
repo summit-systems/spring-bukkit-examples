@@ -1,6 +1,8 @@
 package kr.summitsystems.mute
 
 import kr.summitsystems.springbukkit.SpringBukkitApplication
+import kr.summitsystems.springbukkit.coroutines.annotation.EnableCoroutinesSupport
 
+@EnableCoroutinesSupport
 @SpringBukkitApplication
 class MuteApplication

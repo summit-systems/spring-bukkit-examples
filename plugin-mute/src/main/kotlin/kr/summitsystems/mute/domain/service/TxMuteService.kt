@@ -4,7 +4,6 @@ import com.google.common.base.Preconditions
 import jakarta.transaction.Transactional
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
-import kr.summitsystems.mute.domain.exception.InvalidTimeException
 import kr.summitsystems.mute.domain.Mute
 import kr.summitsystems.mute.domain.repository.MuteRepository
 import kr.summitsystems.springbukkit.checker.annotation.EnsuresAsyncThread
