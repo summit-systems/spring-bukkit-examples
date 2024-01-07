@@ -19,12 +19,12 @@ bukkit {
         }
     }
     this.libraries = listOf(
-        libs.spring.bukkit.core
+        libs.spring.bukkit.starter
     ).map { it.get().toString() }
 }
 
 dependencies {
     implementation(libs.spigot)
-    implementation(libs.spring.bukkit.core)
+    implementation(libs.spring.bukkit.starter)
     testImplementation(libs.spigot)
 }

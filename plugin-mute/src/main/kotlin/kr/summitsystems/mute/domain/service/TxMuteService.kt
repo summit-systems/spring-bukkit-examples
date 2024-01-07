@@ -6,7 +6,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import kr.summitsystems.mute.domain.Mute
 import kr.summitsystems.mute.domain.repository.MuteRepository
-import kr.summitsystems.springbukkit.checker.annotation.EnsuresAsyncThread
+import kr.summitsystems.springbukkit.core.checker.annotation.EnsuresAsyncThread
 import org.springframework.stereotype.Service
 import java.time.Duration
 import java.time.LocalDateTime

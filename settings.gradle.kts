@@ -32,7 +32,7 @@ dependencyResolutionManagement {
     versionCatalogs {
         create("libs") {
             library("spigot", "org.spigotmc:spigot-api:${extra["spigot.version"]}")
-            library("spring-bukkit-core", "kr.summitsystems:spring-bukkit-core:${extra["spring.bukkit.version"]}")
+            library("spring-bukkit-starter", "kr.summitsystems:spring-bukkit-starter:${extra["spring.bukkit.version"]}")
             library("spring-bukkit-coroutines", "kr.summitsystems:spring-bukkit-coroutines:${extra["spring.bukkit.version"]}")
             library("spring-bukkit-jpa", "kr.summitsystems:spring-bukkit-jpa:${extra["spring.bukkit.version"]}")
             library("spring-test", "org.springframework.boot:spring-boot-starter-test:${extra["spring.boot.version"]}")

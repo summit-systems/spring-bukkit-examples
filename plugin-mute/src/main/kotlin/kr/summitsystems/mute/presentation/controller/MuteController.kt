@@ -4,13 +4,13 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.launch
 import kr.summitsystems.mute.domain.service.MuteService
-import kr.summitsystems.springbukkit.checker.annotation.EnsuresAsyncThread
+import kr.summitsystems.springbukkit.core.checker.annotation.EnsuresAsyncThread
 import kr.summitsystems.springbukkit.command.CommandContext
 import kr.summitsystems.springbukkit.command.annotation.CommandArgument
 import kr.summitsystems.springbukkit.command.annotation.CommandAuthorize
 import kr.summitsystems.springbukkit.command.annotation.CommandController
 import kr.summitsystems.springbukkit.command.annotation.CommandMapping
-import kr.summitsystems.springbukkit.util.BukkitColorUtils
+import kr.summitsystems.springbukkit.core.util.BukkitColorUtils
 import org.bukkit.entity.Player
 import org.bukkit.plugin.PluginDescriptionFile
 import org.springframework.scheduling.annotation.Async

@@ -1,6 +1,6 @@
 package kr.summitsystems.gamemode.command
 
-import kr.summitsystems.springbukkit.checker.annotation.EnsuresMainThread
+import kr.summitsystems.springbukkit.core.checker.annotation.EnsuresMainThread
 import kr.summitsystems.springbukkit.command.CommandContext
 import kr.summitsystems.springbukkit.command.annotation.CommandController
 import kr.summitsystems.springbukkit.command.annotation.CommandMapping

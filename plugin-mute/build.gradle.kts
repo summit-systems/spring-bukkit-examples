@@ -20,7 +20,7 @@ bukkit {
         }
     }
     this.libraries = listOf(
-        libs.spring.bukkit.core,
+        libs.spring.bukkit.starter,
         libs.spring.bukkit.jpa,
         libs.spring.bukkit.coroutines
     ).map { it.get().toString() }
@@ -28,7 +28,7 @@ bukkit {
 
 dependencies {
     implementation(libs.spigot)
-    implementation(libs.spring.bukkit.core)
+    implementation(libs.spring.bukkit.starter)
     implementation(libs.spring.bukkit.jpa)
     implementation(libs.spring.bukkit.coroutines)
     testImplementation(libs.spigot)

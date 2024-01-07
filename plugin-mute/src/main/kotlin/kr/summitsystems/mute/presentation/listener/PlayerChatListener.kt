@@ -2,9 +2,9 @@ package kr.summitsystems.mute.presentation.listener
 
 import kr.summitsystems.mute.domain.event.PlayerChatBlockedEvent
 import kr.summitsystems.mute.domain.service.MuteService
-import kr.summitsystems.springbukkit.checker.annotation.EnsuresAsyncThread
-import kr.summitsystems.springbukkit.listener.HandleOrder
-import kr.summitsystems.springbukkit.listener.annotation.BukkitListener
+import kr.summitsystems.springbukkit.core.checker.annotation.EnsuresAsyncThread
+import org.bukkit.event.EventHandler
+import org.bukkit.event.EventPriority
 import org.bukkit.event.player.AsyncPlayerChatEvent
 import org.springframework.context.ApplicationEventPublisher
 import org.springframework.stereotype.Component
@@ -15,7 +15,7 @@ class PlayerChatListener(
     private val applicationEventPublisher: ApplicationEventPublisher
 ) {
     @EnsuresAsyncThread
-    @BukkitListener(handleOrder = HandleOrder.LATE, ignoreCancelled = true)
+    @EventHandler(priority = EventPriority.HIGH, ignoreCancelled = true)
     suspend fun onChat(event: AsyncPlayerChatEvent) {
         val player = event.player
         if (muteService.isOnMute(player.uniqueId)) {
